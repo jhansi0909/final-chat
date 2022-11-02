@@ -89,7 +89,6 @@ function handleMessage(event){
     setMessages(event.target.value)
 }
 const handleEnterbutton=()=>{
-
        a=filterdata.map((y)=>{
        if(y.id==id){
         console.log(y.message)
@@ -144,15 +143,19 @@ return(
     </div>
             <div>
                 <div className="rightside">
-                    <div><img className="image2" src={image}></img> </div>
+                    <img className="image2" src={image}></img>
                     <div className="name2">{name}</div>
                 </div>
                 <div className="rightcontainer">
                    {
                     message.map((n)=>{
                         return(
-             
-                            <div className="message">{n}</div>
+                            <div>
+                        <div className="message">
+                      <div>  <img className="image3" src={image}></img></div>
+                          <div className="msge">{n}</div>
+                        </div>
+                        </div>
                     )
                     })
                    }
