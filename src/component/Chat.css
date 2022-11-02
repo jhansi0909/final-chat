@@ -1,0 +1,114 @@
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color:silver;
+    display: flex;
+}
+.leftcontainer{
+    width: 450px;
+    background-color: white;
+    margin: 30px;
+    overflow-y: scroll;
+    /* border: 0.5px solid ; */
+}
+.input{
+    width: 300px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.searchbutton{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    height: 30px;
+    margin-top: 13px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+}
+.search{
+    margin: 10px;
+    background-color: white;
+}
+.rightcontainer{
+    width: 1000px;
+    /* background-color: white; */
+    /* margin: 30px; */
+    height: 575px;
+    overflow-y: scroll;
+    background-color:silver;
+}
+.leftsmallcontainer{
+   height: 60px;
+   display: flex;
+}
+.display{
+    display: flex;
+}
+.horizontall{
+    background: 'lime';
+    color: 'lime';
+    border-color: 'lime';
+    height: '3px',
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin: 10px;
+}
+.name{
+    margin: 20px;
+    font-size: 18px;
+}
+.rightinput{
+    height: 30px;
+    width: 900px;
+    margin-top: 7px;
+    margin-left: 15px;
+    /* width: 200px;
+    height: 50px; */
+    /* background-color: white; */
+}
+.rightside{
+    background-color: whitesmoke;
+    height: 60px;
+    display: flex;
+    margin-top: 30px;
+}
+.image2{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin: 7px;
+}
+.name2{
+    margin: 20px;
+    font-size: 18px;
+}
+.downinput{
+    height: 50px;
+    background-color: whitesmoke;
+}
+.down{
+    display: flex;
+    gap: 10px;
+}
+.enterbutton{
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+}
+.message{
+    background-color: yellowgreen;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 500px;
+}
+
+
+   
