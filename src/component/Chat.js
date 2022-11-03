@@ -5,8 +5,8 @@ import dp3 from './dp3.jpg';
 import dp2 from './dp2.jpg';
 import dp4 from './dp4.jpg';
 import dp5 from './dp5.jpg';
+import background from './background.jpg';
 import "./Chat.css";
-import {useLocation } from "react-router-dom";
 function Chat(){
     var a
     const [name,setName]=useState("")
@@ -16,7 +16,6 @@ function Chat(){
     const [message,setMessage]=useState([])
     const [search,setSearch]=useState()
     const [searchmsge,setSearchmsge]=useState("")
-    // const [msge,setMsge]=useState("")
     const x=[
         {
             id:"a",
@@ -108,7 +107,7 @@ function handleSearch(a){
     setSearchmsge(a.target.value)
     console.log(searchmsge)
 }
-function Search(n){
+function Search(obj){
     const b=data.filter((m) => m.name == searchmsge)
     setFilterdata(b)
     setSearchmsge("")
@@ -150,19 +149,17 @@ return(
                    {
                     message.map((n)=>{
                         return(
-                            <div>
                         <div className="message">
                       <div>  <img className="image3" src={image}></img></div>
                           <div className="msge">{n}</div>
                         </div>
-                        </div>
-                    )
+                    ) 
                     })
                    }
                 </div>
                <div className="downinput">  
                <div className="down"> 
-               <textarea  className="rightinput"  type="text" name="message" value={messages} placeholder="Type a Message" cols="40" rows="5" onChange={handleMessage}></textarea>
+               <textarea  className="rightinput" type="text" name="message" value={messages} placeholder="Type a Message" cols="40" rows="5" onChange={handleMessage}></textarea>
                <div><button className="enterbutton" onClick={()=>handleEnterbutton()}>Send</button></div> 
                 </div>
                </div> 
