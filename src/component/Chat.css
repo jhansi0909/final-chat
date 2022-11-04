@@ -1,68 +1,81 @@
 .maincontainer{
     height: 100vh;
     width: 100vw;
-    background-color:silver;
+background-color: #a7bcff;
     display: flex;
 }
 .leftcontainer{
     width: 450px;
-    background-color: white;
+    background-color: #3e3c61;
     margin: 30px;
+    color: lightgray;
+    margin-top: 30px;
     overflow-y: scroll;
-    border: 0.5px solid ;
+    height: 688px;
+    border: 0.5px solid white;
 }
 .input{
     width: 300px;
     height: 30px;
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 12px;
+    background-color: lightgray;
 }
 .searchbutton{
     display: flex;
     justify-content: space-between;
+    width: 430px;
+    height:62px;
+    background-color: #2f2d52;
+    position: absolute;
 }
 .button{
     height: 30px;
+    width: 60px;
     margin-top: 13px;
     margin-right: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
+    background-color:#5d5b8d ;
+    color: lightgray;
+    border-radius: 10px;
+    border: none;
 }
 .button:hover {
-    /* opacity: 0.1; */
-    background-color: purple;
+    background-color: #2f2d52;
     color: white;
+    border:1px solid white;
 }
 .search{
     margin: 10px;
     background-color: white;
 }
 .rightcontainer{
-    /* width: 1000px; */
+    margin: 1px;
     height: 575px;
-    border: 0.5px solid ;
+    border: 0.5px solid black;
     overflow-y: scroll;
-    /* background-color:; */
+    background-color: #ddddf7;
+}
+.horizontall{
+    background: whitesmoke;
+    height: "0px";
+    border: "none";
 }
 .leftsmallcontainer{
-   height: 60px;
+   height: 70px;
    display: flex;
+}
+.leftsmallcontainer:hover{
+background-color: #2f2d52;
 }
 .display{
     display: flex;
-}
-.horizontall{
-    background: 'lime';
-    color: 'lime';
-    border-color: 'lime';
-    height: '3px',
 }
 .image{
     width: 50px;
     height: 50px;
     border-radius: 40px;
     margin: 10px;
+    border: 1px solid white;
 }
 .name{
     margin: 20px;
@@ -73,23 +86,22 @@
     width: 900px;
     margin-top: 7px;
     margin-left: 15px; 
-     border: 0.5px solid ;
-    /* width: 200px;
-    height: 50px; */
-    /* background-color: white; */
+    background-color: whitesmoke;
 }
 .rightside{
-    background-color: whitesmoke;
     height: 60px;
     display: flex;
     margin-top: 30px;
-    border: 0.5px solid ;
+    background-color:#5d5b8d;
+    border: 0.5px solid lightgray;
+    color: lightgray;
 }
 .image2{
     width: 40px;
     height: 40px;
     border-radius: 40px;
     margin: 10px;
+    border: 1px solid white;
 }
 .image3{
     width: 24px;
@@ -100,40 +112,44 @@
 }
 .name2{
     margin: 17px;
-    font-size: 17px;
+    font-size: 19px;
 }
 .downinput{
     height: 50px;
-    background-color: whitesmoke;
+    background-color: white;
     border: 0.5px solid ;
 }
 .down{
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 .enterbutton{
     height: 30px;
-    background-color: black;
+    width: 50px;
+    background-color: #8da4f1;
     color: white;
     margin-top: 8px;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: none;
     margin-right: 10px;
 }
 .enterbutton:hover {
-    background-color:blue;
+  background-color: #2f2d52;
+  color: lightgray;
 }
 .message{
-    width: 550px;
-    background-color:rgb(185, 230, 185);
     display: flex;
-    margin: 10px;
-    /* margin-right: 450px; */
-    border-radius: 10px;
 }
 .msge{
-    margin: 8px;
+    width: 550px;
+    max-width: max-content;
+    color: black;
+    margin: 8px; 
+    border-radius: 0px 10px 10px 10px;
     line-break: anywhere;
-}
+    padding: 10px;
+    background-color:#8da4f1; 
+} 
 .background{
     height: 575px;
 }

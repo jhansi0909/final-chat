@@ -16,7 +16,14 @@ function Chat(){
     const [message,setMessage]=useState([])
     const [search,setSearch]=useState()
     const [searchmsge,setSearchmsge]=useState("")
+    const [call,setCall]=useState(false)
     const x=[
+        {
+            id:"a",
+            image:dp,
+            name:"Jhansi",
+            message:[]
+        },
         {
             id:"a",
             image:dp,
@@ -72,6 +79,18 @@ function Chat(){
             name:"Abc",
             message:[]
         },
+        {
+            id:"j",
+            image:dp2,
+            name:"Shakila",
+            message:[]
+        },
+        {
+            id:"k",
+            image:dp5,
+            name:"Siri",
+            message:[]
+        },
     ]
     const [data,setData]=useState(x)
     const [filterdata,setFilterdata]=useState(data)
@@ -81,6 +100,7 @@ setName(obj.name)
 setImage(obj.image)
 setMessage(obj.message)
 setId(obj.id)
+setCall(true)
 console.log(id)
 console.log(message)
 }
@@ -115,13 +135,12 @@ function Search(obj){
 return(
 <div className="maincontainer">
     <div className="leftcontainer">
-        <div className="searchbutton"><input className="input" placeholder="Search" value={searchmsge} onChange={handleSearch}></input>
+    <div className="searchbutton"><input className="input" placeholder="Search" value={searchmsge} onChange={handleSearch}></input>
         <button className="button"
          onClick={()=>{
                     Search(data)
                 }}
                 >Search</button></div>
-        <div className="horizontall"><hr></hr> </div>
         {
             filterdata.map((x)=>{
                 return(
@@ -135,21 +154,22 @@ return(
                     <div className="name">{x.name} </div>
                 </div>
              <div className="horizontall"><hr></hr> </div>
-                </div>
+             </div>
                 )
         })
         }
     </div>
             <div>
                 <div className="rightside">
-                    <img className="image2" src={image}></img>
+                  <img className="image2" src={image}></img>
+                  {/* {(call==false)?  <img className="image2" src={image}> </img>:""} */}
                     <div className="name2">{name}</div>
                 </div>
                 <div className="rightcontainer">
                    {
                     message.map((n)=>{
                         return(
-                        <div className="message">
+                            <div className="message">
                       <div>  <img className="image3" src={image}></img></div>
                           <div className="msge">{n}</div>
                         </div>
@@ -165,6 +185,7 @@ return(
                </div> 
                 </div>
 </div>
+
 )
 }
 export default Chat;
